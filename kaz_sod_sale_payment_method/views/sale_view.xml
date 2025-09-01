@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2025 Kaizen Principles
+    Adds 'Payment Method' after 'Payment Terms' on the Sales Order form.
+-->
+<odoo>
+    <record id="view_order_form" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="priority">99</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="payment_method_id" options="{'no_create': True}" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

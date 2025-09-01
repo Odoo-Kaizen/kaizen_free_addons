@@ -1,0 +1,688 @@
+<!------------------------------------------------ Enhanced Design For Default Payment Method on Customers & Sales Orders Module -------------------------------->
+<div class="container shadow px-40" style="padding-left: 0px; padding-right: 0px;">
+    <!-- Navbar -->
+       <div class="navbar navbar-expand-md navbar-light bg-white m-0">
+        <div class="container-fluid align-items-center p-2 m-0">
+            <a class="navbar-brand" href="index.html">
+                <img src="icon.png" width="80" height="80" ></a>
+            <div>
+                <ul class="nav nav-tabs ms-auto" id="myTab" style="background-color: #FFFFFF;" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a aria-controls="overview" class="nav-link active" aria-bs-selected="true"
+                            style="color: #333; font-weight: 500px;" onMouseOver="this.style.color='#7F4994'"
+                            onMouseOut="this.style.color='#333'" href="#overview" id="overview-tab"
+                            data-bs-toggle="tab">Overview</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a aria-controls="features" aria-bs-selected="false" class="nav-link"
+                           style="color: #333; font-weight: 500px;" onMouseOver="this.style.color='#7F4994'"
+                            onMouseOut="this.style.color='#333'" href="#features" id="features-tab"
+                            data-bs-toggle="tab">Features</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a aria-controls="whyKaizen" class="nav-link" aria-bs-selected="false"
+                            style="color: #333; font-weight: 500px;" onMouseOver="this.style.color='#7F4994'"
+                            onMouseOut="this.style.color='#333'" href="#whyKaizen" id="whyKaizen-tab"
+                            data-bs-toggle="tab">Why Kaizen</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <a href="https://wa.me/+971566828386?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services"
+                class="btn contact-btn ms-3"
+                style="background-color:#7F4994 ; color:white;font-weight:bold;border: none;  padding: 5px 15px;  border-radius: 5px;"
+                onMouseOver="this.style.color='#000000'" onMouseOut="this.style.color='#ffffff'"><i
+                    class="fa fa-brands fa-whatsapp"></i> +971 56 682 8386</a>
+        </div>
+    </div>
+    <div class="tab-content" id="myTabContent"
+         style="padding-right: 0px; padding-top: 20px; padding-bottom: 20px; border-radius: 0 20px 20px 0;">
+
+        <!-- Overview Tab -->
+        <section class="tab-pane active p-0 m-0" id="overview">
+            <!-- Banner -->
+            <section class="row" style="margin: 20px;">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h4 style="color: #182023; margin-top: 20px; margin-bottom: 20px; font-size: 48px;">
+                        Default Payment Method on Customers & Sales Orders
+                        <br>
+                        <span style="color: #7F4994;">for Odoo</span>
+                    </h4>
+                    <p style="font-size: 16px; color: #182023;">
+The Kaizen – Default Payment Method on Customers & Sales Orders module streamlines your sales process by automatically applying each customer’s preferred payment method to their sales orders.
+
+With this add-on, you can set a default Cash or Bank journal directly on the customer record. Every time a new Sales Order is created, the payment method is prefilled from the customer’s default — reducing manual data entry, preventing mistakes, and ensuring consistent accounting practices.
+
+This module is ideal for companies handling high volumes of sales or working with repeat customers, where efficiency and accuracy in payment handling are critical.
+                    </p>
+                    <p style="color: #7F4994;">
+                        &copy; 2025 Kaizen Principles
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img width="100%" src="images/banner.png" >
+                </div>
+            </section>
+
+            <!-- Key Highlights -->
+            <section style="background-color: #7F4994; text-align: center; padding: 30px 0px;">
+                <h2 style="color: #ffffff; margin-bottom: 20px;">
+                    What's New in Default Payment Method on Customers & Sales Orders for Odoo
+                </h2>
+                <div class="d-flex justify-content-center flex-wrap">
+                    <div style="background-color: #7F4994; color: #ffffff; border-radius: 10px; margin: 5px; font-size: 0.9rem; padding: 10px 15px;">
+                        <img width="40px" height="40px" src="images/feature_icon1.png">
+                        <p style="color: #FFFFFF; font-size: 14px; font-weight: bold; margin-top: 10px;">
+                           Save Time
+                        </p>
+                    </div>
+                    <div style="background-color: #7F4994; color: #ffffff; border-radius: 10px; margin: 5px; font-size: 0.9rem; padding: 10px 15px;">
+                        <img width="40px" height="40px" src="images/feature_icon2.png">
+                        <p style="color: #FFFFFF; font-size: 14px; font-weight: bold; margin-top: 10px;">
+                            Reduce Errors
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <div style="background-color: #7F4994; color: #ffffff; border-radius: 10px; margin: 5px; font-size: 0.9rem; padding: 10px 15px;">
+                            <img width="40px" height="40px" src="images/feature_icon3.png">
+                            <p style="color: #FFFFFF; font-size: 14px; font-weight: bold; margin-top: 10px;">
+                                Standardize Accounting
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div style="background-color: #7F4994; color: #ffffff; border-radius: 10px; margin: 5px; font-size: 0.9rem; padding: 10px 15px;">
+                                <img width="40px" height="40px" src="images/feature_icon4.png">
+                                <p style="color: #FFFFFF; font-size: 14px; font-weight: bold; margin-top: 10px;">
+                                   Easy to Use
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action / Contact -->
+            <section style="background-color: #FCF4FF; padding: 50px 15px;">
+                <div class="container d-flex flex-wrap align-items-center justify-content-between">
+                    <div class="col-md-6 text-center">
+                        <h2 style="font-size: 2rem; font-weight: bold; color: #333;">
+                            Kaizen Principles
+                            <br>
+                            <span style="color: #7F4994;">Your Partner</span>
+                        </h2>
+                        <p style="color: #182023; margin-bottom: 20px;">
+                            We're here to support your growth 24/7. Connect with our experts now.
+                        </p>
+                        <div class="gap-3 align-items-center">
+                            <a href="https://wa.me/+971566828386?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services"
+                               class="btn btn-primary"
+                               style="background-color: #7F4994; border: none;">
+                               <i class="fa fa-brands fa-whatsapp"></i> +971 56 682 8386
+                            </a>
+                            <a href="mailto:sales@kaizenae.com"
+                               class="btn btn-outline-primary"
+                               style="background-color: #1C9CC7; border-color: #1C9CC7; color: #ffffff;"
+                               onMouseOver="this.style.color='#000000'"
+                               onMouseOut="this.style.color='#ffff'">
+                               <i class="fa fa-solid fa-envelope"></i> Mail Us
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 text-end align-items-center">
+                        <img height="300" style="max-width: 100%;" src="images/contact_us.png" alt="Contact Us">
+                    </div>
+                </div>
+            </section>
+
+            <section class="apps-section text-center" style="
+            padding: 50px 20px;
+            margin: 30px 0px;
+            background-color: #FCF4FF;">
+                <div>
+                    <div>
+                        <h5 style="font-size: 2rem;
+                        font-weight: bold;
+                        color: #333;
+                        margin-bottom: 10px;"><span style="color: #7F4994;">Kaizen's </span>Top App Recommendations
+                        </h5>
+                        <p style="text-align: center; font-size: .75rem;
+                        color: #555;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        text-align: center;">Take a look at our other Odoo apps designed to make your life
+                            easier with a smooth
+                            workflow. Don't miss the chance to uplift your Odoo ERP experience with our apps!
+                        </p>
+                        <a style="color: #7F4994;
+                        font-weight: bold;
+                        text-decoration: underline;
+                        " href="https://apps.odoo.com/apps/modules/browse?search=kaizen">More
+                            Apps &raquo;</a>
+
+                    </div>
+                    <div class="row " style="margin-top:20px;">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="h-80" style="height: 280px;
+                            border: 1px solid #f8f9fa;
+                            border-radius: 10px;
+                            background-color: #ffffff;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            padding: 10px;
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            margin-bottom: 20px;">
+                                <div style="padding: 10px;">
+                                    <div class="row">
+                                        <img class="col-4" src="images/tamara_pos.png" width="40px" height="60px"
+                                            alt="POS Tamara">
+                                        <h6 class="col-8" style="font-size: 1rem;
+                                        font-weight: bold;
+                                       text-align: center;
+                                       margin: auto;
+                                        color: #333;">POS Tamara</h6>
+                                    </div>
+                                    <p style="
+  color: #182023; font-size: 14px; margin-top: 10px; text-align: start;"> Pay point of sale orders with tamara payment
+                                        gateway and
+                                        refund orders paid with tamara....</p>
+                                    <a href="https://apps.odoo.com/apps/modules/16.0/pos_tamara" style="color: #7F4994;
+                                        font-weight: bold;
+                                        text-decoration: underline;
+                                        text-align: start;">Learn More &raquo;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="h-80" style="height: 280px;
+                            border: 1px solid #f8f9fa;
+                            border-radius: 10px;
+                            background-color: #ffffff;
+                            padding: 10px;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            margin-bottom: 20px;">
+                                <div>
+                                    <div class="row">
+                                        <img class="col-4" src="images/corporate_tax.png" width="20px"
+                                            height="60px" alt="UAE Corporate Tax">
+                                        <h6 class="col-8" style="font-size: 1rem;
+                                        font-weight: bold;
+                                        margin: auto;
+                                        color: #333;">UAE Corporate Tax
+                                        </h6>
+                                    </div>
+                                    <p style="text-align: start;
+  color: #182023;">Get Complete State-specific legislation view of Company income
+                                        taxes Generate / redraft related journals at any time during the year...</p>
+                                    <a href="https://apps.odoo.com/apps/modules/16.0/corporate_tax" class="learn-more"
+                                        style="color: #7F4994;
+                                        font-weight: bold;
+                                        text-decoration: underline;">Learn More &raquo;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="h-80" style="height: 280px;
+                            border: 1px solid #f8f9fa;
+                            border-radius: 10px;
+                            padding: 10px;
+                            background-color: #ffffff;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            margin-bottom: 20px;">
+                                <div>
+                                    <div class="row">
+                                        <img class="col-4" src="images/stock_report_print.png" width="20px"
+                                            height="40px" alt="Stock Report PDF">
+                                        <h6 class="col-8" style="font-size: 1rem;
+                                        font-weight: bold;
+                                        margin: auto;
+                                        color: #333;">Stock Report PDF </h6>
+                                    </div>
+                                    <p style="text-align: start;
+  color: #666;">PDF report to print inventory transactions using different
+                                        fillters...</p>
+                                    <a href="https://apps.odoo.com/apps/modules/16.0/stock_report_print"
+                                        class="learn-more" style="color: #7F4994;
+                                        font-weight: bold;
+                                        text-decoration: underline">Learn More &raquo;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="h-80" style="height: 280px;
+                            border: 1px solid #f8f9fa;
+                            border-radius: 10px;
+                            background-color: #ffffff;
+                            padding: 10px;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            margin-bottom: 20px;">
+                                <div>
+                                    <div class="row">
+                                        <img class="col-4" src="images/tamara.png" width="20px" height="60px"
+                                            alt="Payment Provider: Tamara">
+                                        <h6 class="col-8" style="font-size: 1rem;
+                                        font-weight: bold;
+                                        margin: auto;
+                                        color: #333;">Payment Provider: Tamara</h6>
+                                    </div>
+                                    <p style="
+  color: #666; text-align: start;">Integration With Tamara Payment Gateway (E-commerce and Point
+                                        of Sale)...</p>
+                                    <a href="https://apps.odoo.com/apps/modules/16.0/tamara" style="color: #7F4994;
+                                    font-weight: bold;
+                                    text-decoration: underline;" class="learn-more">Learn
+                                        More &raquo;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Notes -->
+            <div class="support-section" style="background-color: #ffffff;
+            padding: 80px 20px;
+            margin-top: 50px;">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h2 style="font-size: 28px;
+  font-weight: 700;">Free <span style=" color: #7F4994;">30 Days</span> Support</h2>
+                        <p style=" font-size: 16px;
+  margin: 15px 0;">Kazien Principles will provide FREE 30 days support for any doubt, queries, and bug fixing
+                            (excluding data recovery) or any type of issues related to this module. This is applicable
+                            from the date of purchase.</p>
+                        <div class="note" style="background-color: #eaf7f7;
+                        border-left: 4px solid #00a99d;
+                        padding: 10px 15px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        border-radius: 5px;
+                        display: inline-block;">
+                            Note: Extensively Tested on Odoo Vanilla with Ubuntu OS
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img style=" max-width: 100%;
+  height: 300px;" src="images/support.png" alt="Support" class="support-image">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+             <!-- Features Tab -->
+        <section class="tab-pane p-0 m-0 fade" id="features">
+            <div class="why-section" style="text-align: center; height: auto; border-radius: 20px; padding:0px 20px;">
+                <!-- Header -->
+                <h2 class="header-text text-center" style="text-align: center; margin: 20px 0px; font-weight: bold; color: #000000;">
+                    Default Payment Method on Customers & Sales Orders
+                </h2>
+                <p class="description text-center" style="text-align: center; font-size: 16px; padding: 20px 140px; margin-bottom: 20px;">
+Gain complete control and accuracy over customer payment handling—automatically capture and apply each customer’s default Cash or Bank journal without adding extra steps to your sales workflow. At order creation, sales teams are guided by pre-set, customer-specific payment methods, eliminating guesswork and manual selection errors. Built-in consistency ensures every Sales Order flows into accounting with the correct journal, while managers benefit from standardized, cleaner financial records. Whether managing hundreds of repeat customers or operating across multiple branches, you get faster order entry, reduced reconciliation errors, and reliable data that keeps both sales and finance aligned. Perfect for high-volume trading, distribution, and services businesses where speed and accuracy are critical.
+                </p>
+                <img width="100%" height="340px" style="margin-bottom: -10px;" src="images/banner2.png" alt="Valuation Banner">
+            </div>
+
+            <section class="row" style="background-color: #FCF6FE; border-radius: 20px; padding:0px 20px; margin: 0px 0px;">
+                <div class="align-items-start col-lg-3 col-md-4 col-sm-6">
+                    <div class="d-flex flex-column me-3" style="margin: 10px 0px; margin-bottom: 20px;">
+                        <ul class="nav nav-tabs w-100 row" id="myTab" role="tablist" style="list-style-type: none;">
+                            <li class="nav-item col-12" role="presentation">
+                                <a class="nav-link active"
+                                   style="color: #7F4994; text-align: start;"
+                                   href="#step1-tab"
+                                   data-bs-toggle="tab"
+                                   role="tab">
+                                   <img width="22px" src="images/icon1.png">
+                                    Set Default Sale Payment Method on Customer</a>
+                            </li>
+                            <li class="nav-item col-12" role="presentation">
+                                <a class="nav-link"
+                                   style="color: #7F4994; text-align: start;"
+                                   href="#step2-tab"
+                                   data-bs-toggle="tab"
+                                   role="tab">
+                                   <img width="22px" src="images/icon2.png" >Automatic Payment Method on Sales Order
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tab Content with brief descriptions -->
+                <div class="tab-content col-lg-9 col-md-8 col-sm-6" id="myTabContent" style="padding-right: 0px; padding-top: 0px; border-radius: 0 20px 20px 0;">
+                    <div class="tab-pane fade show active" id="step1-tab" style="padding: 0px 20px;" role="tabpanel">
+                        <h4 style="font-weight: bold; margin-bottom: 20px;">
+                         Set Default Sale Payment Method on Customer
+                        </h4>
+                        <img style="  width: 100%;
+                        height: 400PX;
+                        margin-bottom: 10px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;" src="images/Screenshot1.png">
+                        <p>
+Define each customer’s preferred payment method once and let Odoo handle the rest. From the Sales & Purchase tab of the customer form, select either Cash or Bank as the default Sale Payment Method. Every new Sales Order created for this customer will automatically inherit this choice, ensuring faster order entry, fewer errors, and consistent accounting across your sales process.
+                        </P>
+                    </div>
+                    <div class="tab-pane fade" id="step2-tab" style="padding: 0px 20px;" role="tabpanel">
+                        <h4 style="font-weight: bold; margin-bottom: 20px;">
+                           Automatic Payment Method on Sales Order
+                        </h4>
+                        <img style="  width: 100%;
+                        height: 400PX;
+                        margin-bottom: 10px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;" src="images/Screenshot2.png" >
+                        <p>
+When you create a new Sales Order, the Payment Method field is automatically filled with the customer’s default Cash or Bank journal. This removes the need for manual selection, accelerates order creation, and ensures accounting consistency from the very first step. Users can still adjust the method if required, but by default, every order inherits the correct journal—keeping sales and finance perfectly aligned.
+                        </p>            </div>
+
+                </div>
+            </section>
+        </section>
+
+        <!-- Why Kaizen Tab -->
+        <section class="tab-pane p-0 m-0 fade" id="whyKaizen">
+            <section class="why-section" style="
+            text-align: center;
+            height: auto;
+            border-radius: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;">
+                <h2 style="font-size: 2.5rem;
+                font-weight: bold;
+                color: #333;
+                padding-top: 40px;">Why <span style="color: #7F4994;">Kaizen</span></h2>
+                <p style="  font-size: 1.2rem;
+                color: #555;
+                margin-top: 10px;">You know us as the makers of the Odoo "Default Payment Method on Customers & Sales Orders for Odoo".</p>
+            </section>
+
+
+            <section class="apps-section text-center" style="
+margin: 20px 0px;
+padding: 50px 20px;
+            background-color: #FCF6FE;">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12" style="margin: auto; text-align: start; padding-left: 20px;">
+                        <h5 style=" font-size: 2rem;
+                        font-weight: bold;
+                        color: #333;
+                        margin-bottom: 16px;"><span style=" color: #7F4994;
+                        ">Kaizen's </span>Top App Recommendations</h5>
+                        <p class="font-size: .75rem;
+                        color: #555;
+                        margin-top: 10px;
+
+                        margin-bottom: 30px;
+                        text-align: left;">Take a look at our other Odoo apps designed to make your life easier
+                            with a smooth
+                            workflow. Don't miss the chance to uplift your Odoo ERP experience with our apps!
+                        </p>
+                        <a style="color: #FFFFFF;
+                        background-color: #7F4994;
+                        padding: 10px 20px;
+                        font-weight: bold;
+border-radius: 5px;
+text-align: center;
+margin: 30px 0px;
+text-decoration: none;" href="https://apps.odoo.com/apps/modules/browse?search=kaizen">More
+                            Apps &raquo;</a>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="row ">
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="h-40" style="height: 280px;
+                            border: 1px solid #f8f9fa;
+                            border-radius: 10px;
+                            background-color: #ffffff;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            padding: 10px;
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            margin-bottom: 20px;">
+                                    <div style="padding: 10px;">
+                                        <div class="row">
+                                            <img class="col-4" src="images/tamara_pos.png" width="40px" height="60px"
+                                                alt="POS Tamara">
+                                            <h6 class="col-8" style="font-size: 1rem;
+                                        font-weight: bold;
+                                       text-align: center;
+                                       margin: auto;
+                                        color: #333;">POS Tamara</h6>
+                                        </div>
+                                        <p style="
+  color: #182023; font-size: 14px; margin-top: 10px; text-align: start;"> Pay point of sale orders with tamara payment
+                                            gateway and
+                                            refund orders paid with tamara....</p>
+                                        <a href="https://apps.odoo.com/apps/modules/16.0/pos_tamara" style="color: #7F4994;
+                                        font-weight: bold;
+                                        text-decoration: underline;
+                                        text-align: start;">Learn More &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="h-40" style="height: 280px;
+                            border: 1px solid #f8f9fa;
+                            border-radius: 10px;
+                            background-color: #ffffff;
+                            padding: 10px;
+                            margin: 30px 0px;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            margin-bottom: 20px;">
+                                    <div>
+                                        <div class="row">
+                                            <img class="col-4" src="images/corporate_tax.png" width="20px"
+                                                height="60px" alt="UAE Corporate Tax">
+                                            <h6 class="col-8" style="font-size: 1rem;
+                                        font-weight: bold;
+                                        margin: auto;
+                                        color: #333;">UAE Corporate Tax
+                                            </h6>
+                                        </div>
+                                        <p style="text-align: start;
+  color: #182023;">Get Complete State-specific legislation view of Company income
+                                            taxes Generate / redraft related journals at any time during the year...</p>
+                                        <a href="https://apps.odoo.com/apps/modules/16.0/corporate_tax"
+                                            class="learn-more" style="color: #7F4994;
+                                        font-weight: bold;
+                                        text-decoration: underline;">Learn More &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="h-60" style="height: 280px;
+                            border: 1px solid #f8f9fa;
+                            border-radius: 10px;
+                            padding: 10px;
+                            background-color: #ffffff;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            margin-bottom: 20px;">
+                                    <div>
+                                        <div class="row">
+                                            <img class="col-4" src="images/stock_report_print.png" width="20px"
+                                                height="40px" alt="Stock Report PDF">
+                                            <h6 class="col-8" style="font-size: 1rem;
+                                        font-weight: bold;
+                                        margin: auto;
+                                        color: #333;">Stock Report PDF </h6>
+                                        </div>
+                                        <p style="text-align: start;
+  color: #666;">PDF report to print inventory transactions using different
+                                            fillters...</p>
+                                        <a href="https://apps.odoo.com/apps/modules/16.0/stock_report_print"
+                                            class="learn-more" style="color: #7F4994;
+                                        font-weight: bold;
+                                        text-decoration: underline">Learn More &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="h-60" style="height: 280px;
+                            border: 1px solid #f8f9fa;
+                            border-radius: 10px;
+                            background-color: #ffffff;
+                            padding: 10px;
+                            margin: 30px 0px;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            margin-bottom: 20px;">
+                                    <div>
+                                        <div class="row">
+                                            <img class="col-4" src="images/tamara.png" width="20px" height="60px"
+                                                alt="Payment Provider: Tamara">
+                                            <h6 class="col-8" style="font-size: 1rem;
+                                        font-weight: bold;
+                                        margin: auto;
+                                        color: #333;">Payment Provider: Tamara</h6>
+                                        </div>
+                                        <p style="
+  color: #666; text-align: start;">Integration With Tamara Payment Gateway (E-commerce and Point
+                                            of Sale)...</p>
+                                        <a href="https://apps.odoo.com/apps/modules/16.0/tamara" style="color: #7F4994;
+                                    font-weight: bold;
+                                    text-decoration: underline;" class="learn-more">Learn
+                                            More &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="service py-5" style="
+            padding: 40px;
+            border-radius: 20px;">
+                <div class="text-center mb-4">
+                    <h2><span class="section-title">Kaizen</span> Odoo Services</h2>
+                    <p>Upscale your business with expert services from an Odoo Gold Partner.</p>
+                </div>
+                <div class="row g-4">
+
+                    <div class="col-md-4 col-sm-6">
+                        <div style="border-radius: 8px;
+                        padding: 10px;
+                        text-align: center;
+                        height: 200px;">
+                            <img style=" max-width: 120px;
+  margin-bottom: 15px;" src="images/module_development.png" alt="Module Development">
+                            <h5 style="font-size: 1.25rem;
+                            margin-bottom: 10px;
+                            color: #333;">Module Development</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div style="border-radius: 8px;
+                        padding: 10px;
+                        text-align: center;
+                        height: 200px;">
+                            <img style=" max-width: 120px;
+  margin-bottom: 15px;" src="images/Implementation.png" alt="Implementation">
+                            <h5 style="font-size: 1.25rem;
+                            margin-bottom: 10px;
+                            color: #333;">Implementation</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div style="border-radius: 8px;
+                        padding: 10px;
+                        text-align: center;
+                        height: 200px;">
+                            <img style=" max-width: 120px;
+  margin-bottom: 15px;" src="images/Customization.png" alt="Customization">
+                            <h5 style="font-size: 1.25rem;
+                            margin-bottom: 10px;
+                            color: #333;">Customization</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div style="border-radius: 8px;
+                        padding: 10px;
+                        text-align: center;
+                        height: 200px;">
+                            <img style=" max-width: 120px;
+  margin-bottom: 15px;" src="images/integrations.png" alt="Integrations">
+                            <h5 style="font-size: 1.25rem;
+                            margin-bottom: 10px;
+                            color: #333;">Integration</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div style="border-radius: 8px;
+                        padding: 10px;
+                        text-align: center;
+                        height: 200px;">
+                            <img style=" max-width: 120px;
+  margin-bottom: 15px;" src="images/Migration.png" alt="Migration">
+                            <h5 style="font-size: 1.25rem;
+                            margin-bottom: 10px;
+                            color: #333;">Migration</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div style="border-radius: 8px;
+                        padding: 10px;
+                        text-align: center;
+                        height: 200px;">
+                            <img style=" max-width: 120px;
+  margin-bottom: 15px;" src="images/Support_Maintenance.png" alt="Support & Maintenance">
+                            <h5 style="font-size: 1.25rem;
+                            margin-bottom: 10px;
+                            color: #333;">Support & Maintenance</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div style="border-radius: 8px;
+                        padding: 10px;
+                        text-align: center;
+                        height: 200px;">
+                            <img style=" max-width: 120px;
+  margin-bottom: 15px;" src="images/Consulting.png" alt="Consulting">
+                            <h5 style="font-size: 1.25rem;
+                            margin-bottom: 10px;
+                            color: #333;">Consulting</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="position-relative" style="margin: 25px; height: 240px;">
+        <img class="position-absolute w-100 h-100" src="images/cover.png" alt="Footer Background">
+        <div class="position-relative justify-content-center" style="padding: 50px 0px; margin: auto; text-align: center;">
+            <h1 class="position-relative" style="font-size: 2.5rem; margin-bottom: 20px; color: #ffff;">
+                Try Default Payment Method on Customers & Sales Orders for Odoo today!
+            </h1>
+            <div>
+                <a href="https://wa.me/+971566828386?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services"
+                   class="btn btn-contact"
+                   style="background-color: #ffffff; color: #7F4994; border: 2px solid white;">
+                   <i class="fa fa-brands fa-whatsapp"></i> +971 56 682 8386
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div style="height: 20px;"></div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jQuery3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</div>
