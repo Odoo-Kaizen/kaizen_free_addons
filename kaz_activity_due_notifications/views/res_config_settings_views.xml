@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="kaz_res_config_settings_view_form_inherit" model="ir.ui.view">
+        <field name="name">kaz.es.config.setting.mail.activity.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="Activity Management" string="Activity Management" name="Activity">
+                    <block title="Due Activity Notification" name="activity_due_notification_setting_container">
+                        <!-- Master toggle -->
+                        <setting id="kaz_activity_due_notification_toggle">
+                            <field name="activity_due_notification"/>
+                        </setting>
+                        <!-- On-due date -->
+                        <block name="ondue_date_notify"  invisible="not activity_due_notification">
+                            <setting id="ondue_date_notify">
+                                <field name="ondue_date_notify" />                             
+                            </setting>   
+                            <setting id="notify_create_user_due" invisible="not ondue_date_notify">
+                                <field name="notify_create_user_due" />                                           
+                            </setting>  
+                        </block>     
+                        <block>
+                            <!-- After due date - first -->
+                            <setting id="after_first_notify" invisible="not activity_due_notification">
+                                <field name="after_first_notify" nolable="1"/>                                                               
+                                <field name="enter_after_first_notify"/>
+                                <strong style="padding-left: 10px;">Days After Due Date</strong>                            
+                            </setting>  
+                            <setting id="notify_create_user_after_first" invisible="not after_first_notify">
+                                <field name="notify_create_user_after_first" />                                
+                            </setting>                                                            
+                        </block>
+                        <!-- After due date - second -->
+                        <block>
+                            <setting invisible="not activity_due_notification">
+                                <field name="after_second_notify" nolable="1"/>
+                                <field name="enter_after_second_notify"/>
+                                <strong style="padding-left: 10px;">Days After Due Date</strong>                            
+                            </setting>   
+                            <setting invisible="not after_second_notify">
+                                <field name="notify_create_user_after_second" />
+                            </setting>                             
+                        </block>
+                        <!-- Before due date - first -->
+                        <block>
+                            <setting id="before_second_notify" invisible="not activity_due_notification">
+                                <field name="before_first_notify" nolable="1"/>
+                                <field name="enter_before_first_notify"/>
+                                <strong style="padding-left: 10px;">Days Before Due Date</strong>                            
+                            </setting>
+                            <setting id="notify_create_user_before_first" invisible="not before_first_notify">
+                                <field name="notify_create_user_before_first"  />                                              
+                            </setting>
+                        </block>
+                        <!-- Before due date - second -->
+                        <block>
+                            <setting id="before_second_notify" invisible="not activity_due_notification">
+                                <field name="before_second_notify" nolable="1" />
+                                <field name="enter_before_second_notify"/>
+                                <strong style="padding-left: 10px;">Days Before Due Date</strong>                            
+                            </setting>
+                            <setting id="notify_create_user_before_second" invisible="not before_second_notify">
+                                <field name="notify_create_user_before_second" />                                              
+                            </setting>
+                        </block>                        
+                    </block>
+                </app>              
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Optional: quick action to open the settings section inline -->
+    <record id="activity_config_settings_action" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'kaz_activity_due_notifications', 'bin_size': False}</field>
+    </record>
+</odoo>
