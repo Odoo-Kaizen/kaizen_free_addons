@@ -1,0 +1,16 @@
+from odoo import api, fields, models, _
+class kazWizardMessage(models.TransientModel):
+	_name = "kaz.wizard.message"
+	_description = "Message Wizard"
+	text = fields.Text(string='Message')
+	@api.model
+	def genrated_message(self,message,name='Message/Summary'):
+		res = self.create({'text': message})
+		return {
+			'name'     : name,
+			'type'     : 'ir.actions.act_window',
+			'res_model': 'kaz.wizard.message',
+			'view_mode': 'form',
+			'target'   : 'new',
+			'res_id'   : res.id,
+		}
