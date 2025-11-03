@@ -18,6 +18,6 @@
 	"data": [
 		'security/ir.model.access.csv',
 		'wizard/wizard_message.xml'],
-	"images": ['static/description/Banner.png'],
+	"images": ['static/description/banner.png'],
 	"pre_init_hook": "pre_init_check",
 }
