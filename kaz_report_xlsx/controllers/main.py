@@ -23,7 +23,7 @@ _logger = logging.getLogger(__name__)
 
 class ReportController(ReportController):
     """
-    controller extension to support XLSX report routes and downloads.
+    Kaizen controller extension to support XLSX report routes and downloads.
     NOTE: class name changed from 'ReportController' to avoid shadowing the base class,
     but route signatures are identical, preserving behavior.
     """
@@ -36,7 +36,6 @@ class ReportController(ReportController):
         if converter == "xlsx":
             report = request.env["ir.actions.report"]._get_report_from_name(reportname)
             context = dict(request.env.context)
-            # Convert docids from CSV to a list of ints if provided
             if docids:
                 docids = [int(i) for i in docids.split(",")]
             if data.get("options"):
@@ -59,7 +58,7 @@ class ReportController(ReportController):
         return super().report_routes(reportname, docids, converter, **data)
 
     @route()
-    def report_download(self, data, context=None, token=None, readonly=True):
+    def report_download(self, data, context=None, token=None):
         """
         Handles /report/download for XLSX type by delegating to report_routes with
         proper parameters. Matches Odoo's standard download flow.
@@ -116,6 +115,4 @@ class ReportController(ReportController):
                 error = {"code": 200, "message": "Odoo Server Error", "data": se}
                 return request.make_response(html_escape(json.dumps(error)))
         else:
-            return super().report_download(
-                data, context, token=token, readonly=readonly
-            )
+            return super().report_download(data, context=context, token=token)

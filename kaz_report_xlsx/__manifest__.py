@@ -12,13 +12,12 @@
     "author": "Kaizen Principles",
     "website": "http://www.kaizenae.com/",
     "category": "Reporting",
-    "version": "18.0.1.0.1",
-    "development_status": "Mature",
+    "version": "18.0.1.0.0",
     "license": "LGPL-3",
+    'images': ['static/description/banner.gif',],
     "external_dependencies": {"python": ["xlsxwriter", "xlrd"]},
     "depends": ["base", "web"],
     "demo": ["demo/report.xml"],
-    'images': ['static/description/banner.gif',],
     "installable": True,
     "assets": {
         "web.assets_backend": [

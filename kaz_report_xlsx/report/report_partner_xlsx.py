@@ -4,9 +4,6 @@ from odoo import models
 
 
 class PartnerXlsx(models.AbstractModel):
-    """
-    Sample concrete report to demonstrate usage: prints partner names in column A.
-    """
     _name = "report.kaz_report_xlsx.partner_xlsx"
     _inherit = "report.kaz_report_xlsx.abstract"
     _description = "Partner XLSX Report"

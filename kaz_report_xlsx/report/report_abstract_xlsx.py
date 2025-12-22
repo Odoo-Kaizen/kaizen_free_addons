@@ -35,7 +35,6 @@ try:
                     sheetname = sheetname[:28] + deduplicated_secuence
             return self._check_sheetname(sheetname, is_chartsheet=is_chartsheet)
 
-
     xlsxwriter.Workbook = PatchedXlsxWorkbook
 
 except ImportError:
@@ -71,7 +70,7 @@ class ReportXlsxAbstract(models.AbstractModel):
         Example: USD → "$#,##0.00", EUR (after) → "#,##0.00 €"
         """
         s_before = currency.symbol if currency.position == "before" else ""
-        s_after = f" {currency.symbol}" if currency.position == "after" else ""
+        s_after = " %s" % currency.symbol if currency.position == "after" else ""
         return f"{f'{s_before}'}#,##0.{'0' * currency.decimal_places}{f'{s_after}'}"
 
     def create_xlsx_report(self, docids, data):
