@@ -10,11 +10,11 @@
 
 
     'author': "Kaizen Principles",
-    'website': 'https://erp-software.odoo-saudi.com/discount/',
+    'website': 'http://www.kaizenae.com',
 
 
     'category': 'Stock',
-    'version': '0.1',
+    'version': '17.0.1.0',
     'license': 'OPL-1',
     'depends': ['base', 'stock', 'stock_account', 'sale', 'purchase', 'product'],
 
