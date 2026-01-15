@@ -10,7 +10,7 @@
 
 
     'author': "Kaizen Principles",
-    'website': 'https://erp-software.odoo-saudi.com/discount/',
+    'website': 'http://www.kaizenae.com',
 
 
     'category': 'Stock',
