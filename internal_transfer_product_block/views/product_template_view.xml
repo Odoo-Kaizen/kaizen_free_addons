@@ -11,9 +11,9 @@
                 <xpath expr="//field[@name='product_tooltip']" position="after">
                     <!-- Add your fields or attributes here -->
                     <field name="temp_is_blocked"/>
-                    <field name="temp_block_note" string="" invisible="temp_is_blocked != True"/>
-                    <field name="temp_blocked_wherehouse_ids" widget="many2many_tags" invisible="temp_is_blocked != True" />
-                    <field name="temp_warehouse_note" string="" invisible="temp_is_blocked != True" />
+                    <field name="temp_block_note" string="" invisible="not temp_is_blocked"/>
+                    <field name="temp_blocked_wherehouse_ids" widget="many2many_tags" invisible="not temp_is_blocked"/>
+                    <field name="temp_warehouse_note" string="" invisible="not temp_is_blocked"/>
 
                 </xpath>
             </field>
@@ -28,8 +28,8 @@
                 <xpath expr="//field[@name='detailed_type']" position="after">
                     <!-- Add your fields or attributes here -->
                     <field name="prod_is_blocked" />
-                     <field name="prod_blocked_wherehouse" widget="many2many_tags" invisible="prod_is_blocked != True" />
-                        <field name="temp_warehouse_note" string=""  invisible="prod_is_blocked != True" />
+                     <field name="prod_blocked_wherehouse" widget="many2many_tags" invisible="not prod_is_blocked" />
+                        <field name="temp_warehouse_note" string=""  invisible="not prod_is_blocked" />
 
 
                 </xpath>
@@ -45,8 +45,8 @@
 
                 <xpath expr="//field[@name='barcode']" position="after">
                    <field name="prod_is_blocked" />
-                     <field name="prod_blocked_wherehouse" widget="many2many_tags"  invisible="prod_is_blocked != True" />
-                            <field name="temp_warehouse_note" string=""  invisible="prod_is_blocked != True" />
+                     <field name="prod_blocked_wherehouse" widget="many2many_tags"  invisible="not prod_is_blocked" />
+                            <field name="temp_warehouse_note" string=""  invisible="not prod_is_blocked" />
 
 
                 </xpath>
