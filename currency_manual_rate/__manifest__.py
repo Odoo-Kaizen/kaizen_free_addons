@@ -10,7 +10,7 @@
     """,
 
     'author': "Kaizen Principles",
-    'website': 'https://erp-software.odoo-saudi.com/discount/',
+    'website': 'http://kaizenae.com',
 
     'category': 'Accounting',
     'version': '16.0.1.0.1',
