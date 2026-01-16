@@ -10,10 +10,10 @@
     """,
 
     'author': "Kaizen Principles",
-    'website': 'https://erp-software.odoo-saudi.com/discount/',
+    'website': 'http://kaizenae.com',
 
     'category': 'Accounting',
-    'version': '0.1',
+    'version': '17.0.0.1',
     'license': 'OPL-1',
 
     # any module necessary for this one to work correctly

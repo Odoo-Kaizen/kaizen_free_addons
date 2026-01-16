@@ -18,7 +18,16 @@ class AccountMove(models.Model):
 class AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
 
-    @api.depends('currency_id', 'company_id', 'move_id.date', 'move_id.manual_rate')
+    currency_rate = fields.Float(
+        string='Currency Rate',
+        compute='_compute_currency_rate',
+        store=True,
+        digits=(12, 6),
+        readonly=True,
+        help='The rate used for the conversion from the company currency to the currency of the journal item.'
+    )
+
+    @api.depends('currency_id', 'company_id', 'move_id.date', 'move_id.manual_rate', 'move_id.apply_currency_rate')
     def _compute_currency_rate(self):
         @lru_cache()
         def get_rate(from_currency, to_currency, company, date):
@@ -32,11 +41,11 @@ class AccountMoveLine(models.Model):
         for line in self:
             if line.move_id.manual_rate and line.move_id.apply_currency_rate:
                 line.currency_rate = line.move_id.manual_rate
-            line.currency_rate = get_rate(
-                from_currency=line.company_currency_id,
-                to_currency=line.currency_id,
-                company=line.company_id,
-                date=line.move_id.invoice_date or line.move_id.date or fields.Date.context_today(line),
-            )
-            print('line.currency_rate',line.currency_rate)
+            else:
+                line.currency_rate = get_rate(
+                    from_currency=line.company_currency_id,
+                    to_currency=line.currency_id,
+                    company=line.company_id,
+                    date=line.move_id.invoice_date or line.move_id.date or fields.Date.context_today(line),
+                )
 
