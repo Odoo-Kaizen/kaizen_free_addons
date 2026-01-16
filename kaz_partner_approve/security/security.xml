@@ -1,0 +1,8 @@
+<odoo>
+	<data noupdate="0">
+        <!-- Dedicated group that can approve partners -->
+	    <record id="group_verify_partner" model="res.groups">
+	        <field name="name">Partner Manager</field>
+	    </record>
+	</data>
+</odoo>
