@@ -9,10 +9,10 @@
        Customer Credit Warning, Customer Due Payments, Customer Customer Due Payments in Sale Order, Sale Order Customer Credit Warning """,
 
     'author': "Kaizen Principles",
-    'website': 'https://erp-software.odoo-saudi.com/discount/',
+    'website': 'http://www.kaizenae.com',
 
     'category': 'Accounting',
-    'version': '0.1',
+    'version': '17.0.1.0.1',
     'license': 'OPL-1',
 
     # any module necessary for this one to work correctly
